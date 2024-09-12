@@ -1,0 +1,146 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="65dp"
+    android:background="#000000">
+
+    <!-- Total Bill -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Bill Amount"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/totalBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <!-- Meat Portion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Meat Portion"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/meatPortion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <!-- Total Number of People -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Number of People"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/totalPeople"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <!-- Number of Meat Eaters -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Number of Meat Eaters"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/meatEaters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <!-- Results Text -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Results will appear here"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
